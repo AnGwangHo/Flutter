@@ -1,3 +1,5 @@
+import 'dart:ui' as prefix0;
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -76,7 +78,17 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter layout demo'),
         ),
         body: Column(
-          children: [titleSection, buttonSelection, textSelection],
+          children: [
+            Image.asset(
+              'images/lake.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
+            titleSection,
+            buttonSelection,
+            textSelection
+          ],
         ),
       ),
     );
